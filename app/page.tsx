@@ -1,15 +1,18 @@
 import Showroom from "./components/inc/contents/showroom/showroom";
+import StudentCourses from "./components/inc/contents/studentcourses";
 import Header from "./components/inc/header/header";
 import Navbar from "./components/inc/header/navbar";
+import { MainProps } from "./components/layouts/basic";
 import Section from "./components/layouts/sections/section-default";
 
 export default function Home() {
     return (
-        <main className="flex p-10 flex-col gap-10 items-center max-w-[920px] m-auto">
+        <main className={MainProps}>
             <Header/>
             <Section>
                 <Navbar/>
                 <Showroom/>
+                <StudentCourses/>
             </Section>
         </main>
     );

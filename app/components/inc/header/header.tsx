@@ -2,7 +2,7 @@ import { IconUserHexagon } from "@tabler/icons-react";
 
 export default function Header() {
     return (
-        <header className="flex gap-10 text-sm">
+        <header className=" text-sm max-md:mt-8">
             <div className="flex gap-5 items-center">
                 <div className=" cursor-pointer">
                     <IconUserHexagon></IconUserHexagon>
