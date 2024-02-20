@@ -2,17 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'wildword';
+    src: url('../public/fonts/WILD-WORLD.woff') format('woff2'),
+         url('../public/fonts/WILD-WORLD.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'newake';
+    src: url('../public/fonts/Newake-Font-Demo.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 51, 65, 85;
+    --background-end-rgb: 30, 41, 59;
   }
 }
 
@@ -24,6 +38,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 @layer utilities {
