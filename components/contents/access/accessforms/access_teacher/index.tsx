@@ -7,22 +7,22 @@ import { useForm } from "react-hook-form";
 
 export default function AccessTeacher() {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const Auth = useCallback( async () => {
-        try {
-            const tokenInfo = await getTeacherToken();
-            if (!tokenInfo) {
-              return;
-            } else {
-              window.location.href = '/';
-            } 
-        }
-        finally {
+    // const Auth = useCallback( async () => {
+    //     try {
+    //         const tokenInfo = await getTeacherToken();
+    //         if (!tokenInfo) {
+    //           return;
+    //         } else {
+    //           window.location.href = '/';
+    //         } 
+    //     }
+    //     finally {
 
-        }
-      }, []); 
-    useEffect( () => {
-        Auth()
-    },[Auth])
+    //     }
+    //   }, []); 
+    // useEffect( () => {
+    //     Auth()
+    // },[Auth])
 
     return (
         <form action="" className="flex flex-col gap-3 items-center w-full " onSubmit={handleSubmit(handleLogin)}>
