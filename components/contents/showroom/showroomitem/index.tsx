@@ -12,7 +12,7 @@ interface ItemProps {
 export default function ShowroomItem({title, description}: ItemProps) {
     const [hover, setHover] = useState<boolean>(false)
     return (
-        <div className="h-96 cursor-pointer"
+        <div className="h-96 cursor-pointer w-full"
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         >
@@ -21,7 +21,7 @@ export default function ShowroomItem({title, description}: ItemProps) {
                 <span className="max-md:text-3xl text-5xl">{title}</span>
                 <span className="max-md:text-xs text-sm font-poppins text-left">{description}!</span>
             </div>
-            <Image className={`transition-all ease-in-out ${hover ? "blur-[2px]" : "blur-none"}`} alt="" src={`/img/teste4.jfif`} width={1000} height={1000}></Image>
+            <img className={`transition-all w-full ease-in-out ${hover ? "blur-[2px]" : "blur-none"}`} alt="" src={`/img/teste4.jfif`}></img>
         </div>
     )
 }

@@ -9,17 +9,15 @@ export default function Header() {
     return (
         <header className=" max-md:mt-8 w-full">
             <div className="flex items-center gap-5 w-full justify-between px-3">
-                <div className="flex gap-3 items-center">
-                    <div className="h-14 w-14 flex items-center justify-center rounded-full border">
-                        <span className="font-wildword tracking-widest">INC</span>
-                    </div>
-                    <div className="h-14 w-14 flex items-center justify-center">
-                        <span className="font-wildword tracking-widest">BOOK</span>
+                <div className="flex gap-2 items-center">
+                    <div className="flex items-center justify-center text-lg">
+                        <span className="font-bold tracking-widest">INC</span>
+                        <span className=" tracking-widest">BOOK</span>
                     </div>
                 </div>
                 {studentLoged ? (
                     <>
-                    <span className="flex gap-3 items-center cursor-pointer transition-all tracking-wider font-medium text-blue hover:text-white" onClick={() => window.location.href = "/student"}>{studentName}<IconUserHexagon width={40} height={40}/></span>
+                    <span className="flex gap-3 items-center cursor-pointer transition-all tracking-wider font-medium text-zinc-300 hover:text-white" onClick={() => window.location.href = "/student"}>{studentName}<IconUserHexagon width={40} height={40}/></span>
                     </>
                 ) : (
                     <>
