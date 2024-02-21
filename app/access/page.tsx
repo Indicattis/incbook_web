@@ -1,20 +1,21 @@
-import Showroom from "@/components/contents/showroom";
-import StudentCourses from "@/components/contents/studentcourses";
-import Header from "@/components/inc/header/header";
+'use client'
+import AccessForms from "@/components/contents/access/accessforms";
 import Navbar from "@/components/inc/header/navbar";
 import { MainProps } from "@/components/layouts/basic";
 import Section from "@/components/layouts/sections/section-default";
-
+import { useCallback } from "react";
 
 export default function Home() {
+
+
     return (
         <main className={MainProps}>
-            <Header/>
             <Section width="full">
                 <Navbar/>
-                <Showroom/>
-                <StudentCourses/>
-            </Section>
+            </Section>      
+            <Section width="auto">
+                <AccessForms></AccessForms>
+            </Section>      
         </main>
-    );
+    )
 }
