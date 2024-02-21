@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 export default function AccessStudent() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     return (
-        <form action="" className="flex flex-col gap-3 items-center w-full " onSubmit={handleSubmit(handleLogin)}>
+        <form action="" className="flex flex-col gap-3 items-center w-full  min-w-72" onSubmit={handleSubmit(handleLogin)}>
             <input 
             type="mail" 
             placeholder="E-mail" 
