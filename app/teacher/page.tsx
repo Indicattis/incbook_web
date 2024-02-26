@@ -1,4 +1,5 @@
 'use client'
+import TeacherPerfil from "@/components/contents/teacher/perfil";
 import Navbar from "@/components/inc/header/navbar";
 import { MainProps } from "@/components/layouts/basic";
 import Section from "@/components/layouts/sections/section-default";
@@ -32,11 +33,7 @@ export default function Home() {
                 Olá professor!
             <Section width="full">
                 <Navbar itens={["home", "teacher"]}/>
-                <div className="">
-                    <div className="">
-                        <IconUserCircle width={160} height={160}/>
-                    </div>
-                </div>
+                <TeacherPerfil/>
             </Section>
         </main>
     )

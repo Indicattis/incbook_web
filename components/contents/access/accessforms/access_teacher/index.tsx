@@ -29,12 +29,12 @@ export default function AccessTeacher() {
             <input 
             type="mail" 
             placeholder="E-mail" 
-            {...register("mail")}
+            {...register("teacher_email")}
             className="w-full bg-transparent border border-pink rounded-full outline-none p-3 placeholder:text-zinc-500"/>
             <input 
             type="password" 
             placeholder="Senha" 
-            {...register("password")}
+            {...register("teacher_password")}
             className="w-full bg-transparent border border-pink rounded-full outline-none p-3 placeholder:text-zinc-500"/>
             <button type="submit" className="transition-all font-bold bg-gradient-to-tr from-red-400 to-pink h-12 w-full rounded-full active:scale-95">Entrar</button>
         </form>

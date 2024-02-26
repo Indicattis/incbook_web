@@ -15,12 +15,12 @@ export default function AccessStudent() {
             <input 
             type="mail" 
             placeholder="E-mail" 
-            {...register("mail")}
+            {...register("student_email")}
             className="w-full bg-transparent border border-blue rounded-full outline-none p-3 placeholder:text-zinc-500"/>
             <input 
             type="password" 
             placeholder="Senha" 
-            {...register("password")}
+            {...register("student_password")}
             className="w-full bg-transparent border border-blue rounded-full outline-none p-3 placeholder:text-zinc-500"/>
             <button type="submit" className="transition-all font-bold bg-gradient-to-tr from-teal-400 to-blue h-12 w-full rounded-full active:scale-95">Entrar</button>
         </form>

@@ -1,11 +1,26 @@
 'use client'
 
 import { useStudent } from "@/data/contexts/token/studentToken";
-import { useTeacher } from "@/data/contexts/token/teacherToken";
 import { IconLogin2, IconUserHexagon } from "@tabler/icons-react";
 
 export default function Header() {
-    const { studentLoged, studentName } = useStudent();
+    const { studentLoged, studentName, studentId } = useStudent();    
+    // const Auth = useCallback( async () => {
+        //     try {
+        //         const tokenInfo = await getTeacherToken();
+        //         if (!tokenInfo) {
+        //           return;
+        //         } else {
+        //           window.location.href = '/';
+        //         } 
+        //     }
+        //     finally {
+    
+        //     }
+        //   }, []); 
+        // useEffect( () => {
+        //     Auth()
+        // },[Auth])
     return (
         <header className=" max-md:mt-8 w-full">
             <div className="flex items-center gap-5 w-full justify-between px-3">

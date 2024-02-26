@@ -36,15 +36,20 @@ import { useEffect, useState } from 'react';
 
 export const useStudent = () => {
   const [studentLoged, setStudentLoged] = useState<boolean>(false);
-  const [studentId, setStudentId] = useState<number>()
-  const [studentName, setStudentName] = useState<string>('')
-  const [studentMail, setStudentMail] = useState<string>('')
+  const [studentId, setStudentId] = useState<string>('');
+  const [studentName, setStudentName] = useState<string>('');
+  const [studentMail, setStudentMail] = useState<string>('');
 
   useEffect(() => {
     try {
       const tokenInfo = getStudentToken();
-      if (!tokenInfo) {
+      const token = getToken();
+
+      if (!tokenInfo || !token) {
         setStudentLoged(false);
+        setStudentId('');
+        setStudentName('');
+        setStudentMail('');
       } else {
         setStudentLoged(true);
         setStudentId(tokenInfo.student_id);
@@ -54,7 +59,7 @@ export const useStudent = () => {
     } catch (error) {
       console.error(error);
     }
-  }, []);
+  }, [getToken()]); // Dependência para atualizar sempre que o token for atualizado
 
-  return { studentLoged, studentId, studentName, studentMail};
+  return { studentLoged, studentId, studentName, studentMail };
 };
