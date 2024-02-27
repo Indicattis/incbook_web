@@ -10,7 +10,7 @@ import StudentCourse from "./studentcourse";
 
 export default function StudentCourses() {
     return (
-        <div>
+        <div className="p-5">
             <div className="text-xs text-zinc-500">Comece agora!</div>
             <div className="font-poppins font-bold mt-1 tracking-widest text-2xl">Meus cursos</div>
             <div className="flex gap-3 mt-3">

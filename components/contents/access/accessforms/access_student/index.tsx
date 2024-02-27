@@ -16,13 +16,13 @@ export default function AccessStudent() {
             type="mail" 
             placeholder="E-mail" 
             {...register("student_email")}
-            className="w-full bg-transparent border border-blue rounded-full outline-none p-3 placeholder:text-zinc-500"/>
+            className="transition-all w-full bg-blue border-l-2 border-blue focus:border-gold rounded-sm outline-none p-3 placeholder:text-gray"/>
             <input 
             type="password" 
             placeholder="Senha" 
             {...register("student_password")}
-            className="w-full bg-transparent border border-blue rounded-full outline-none p-3 placeholder:text-zinc-500"/>
-            <button type="submit" className="transition-all font-bold bg-gradient-to-tr from-teal-400 to-blue h-12 w-full rounded-full active:scale-95">Entrar</button>
+            className="transition-all w-full bg-blue border-l-2 border-blue focus:border-gold rounded-sm outline-none p-3 placeholder:text-gray"/>
+            <button type="submit" className="transition-all font-bold bg-gold  h-12 w-full rounded-sm active:scale-95">Entrar</button>
         </form>
     )
 }

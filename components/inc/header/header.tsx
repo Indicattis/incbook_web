@@ -32,11 +32,11 @@ export default function Header() {
                 </div>
                 {studentLoged ? (
                     <>
-                    <span className="flex gap-3 items-center cursor-pointer transition-all tracking-wider font-medium text-zinc-300 hover:text-white" onClick={() => window.location.href = "/student"}>{studentName}<IconUserHexagon width={40} height={40}/></span>
+                    <span className="flex gap-3 items-center cursor-pointer transition-all tracking-wider font-medium text-gray hover:text-white" onClick={() => window.location.href = "/student"}>{studentName}<IconUserHexagon width={40} height={40}/></span>
                     </>
                 ) : (
                     <>
-                    <span className="flex gap-3 items-center cursor-pointer transition-all text-zinc-500 hover:text-white" onClick={() => window.location.href = "/access"}>Entrar | Cadastrar<IconLogin2 width={30} height={30}/></span>
+                    <span className="flex gap-3 items-center cursor-pointer transition-all text-gray hover:text-white" onClick={() => window.location.href = "/access"}>Entrar | Cadastrar<IconLogin2 width={30} height={30}/></span>
                     </>
                 )}
 

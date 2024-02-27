@@ -59,7 +59,7 @@ export const useStudent = () => {
     } catch (error) {
       console.error(error);
     }
-  }, [getToken()]); // Dependência para atualizar sempre que o token for atualizado
+  }, []); // Dependência para atualizar sempre que o token for atualizado
 
   return { studentLoged, studentId, studentName, studentMail };
 };

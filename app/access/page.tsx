@@ -11,7 +11,10 @@ export default function Home() {
     return (
         <main className={CenteredMainProps}>   
             <Section width="auto">
-                <AccessForms></AccessForms>
+                <div className="w-full flex gap-3">
+                    <AccessForms></AccessForms>
+                    <img className="max-md:hidden" src={`https://source.unsplash.com/featured/500x500?ocean`} alt="" />
+                </div>
             </Section>      
         </main>
     )

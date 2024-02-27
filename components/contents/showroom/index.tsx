@@ -10,8 +10,8 @@ import ShowroomItem from "./showroomitem";
 
 export default function Showroom() {
     return (
-        <div className="flex flex-col bg-slate w-full">
-            <div className="text-xs text-zinc-500">Explore!</div>
+        <div className="flex flex-col bg-slate w-full p-5">
+            <div className="text-xs text-gray">Explore!</div>
             <div className="font-poppins font-bold mt-1 tracking-widest text-2xl">Cursos disponíveis</div>
             <div className="font-poppins max-w-full max-h-80 flex items-center rounded-3xl overflow-hidden">
             <Carousel showThumbs={true} emulateTouch swipeable infiniteLoop showArrows={false}>

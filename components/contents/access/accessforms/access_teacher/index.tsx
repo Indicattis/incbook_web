@@ -30,13 +30,13 @@ export default function AccessTeacher() {
             type="mail" 
             placeholder="E-mail" 
             {...register("teacher_email")}
-            className="w-full bg-transparent border border-pink rounded-full outline-none p-3 placeholder:text-zinc-500"/>
+            className="transition-all w-full bg-blue focus:border-pink border-l-2 border-blue rounded-sm outline-none p-3 placeholder:text-zinc-500"/>
             <input 
             type="password" 
             placeholder="Senha" 
             {...register("teacher_password")}
-            className="w-full bg-transparent border border-pink rounded-full outline-none p-3 placeholder:text-zinc-500"/>
-            <button type="submit" className="transition-all font-bold bg-gradient-to-tr from-red-400 to-pink h-12 w-full rounded-full active:scale-95">Entrar</button>
+            className="transition-all w-full bg-blue focus:border-pink border-l-2 border-blue  rounded-sm outline-none p-3 placeholder:text-zinc-500"/>
+            <button type="submit" className="transition-all font-bold bg-gradient-to-tr from-red-400 to-pink h-12 w-full rounded-sm active:scale-95">Entrar</button>
         </form>
     )
 }
